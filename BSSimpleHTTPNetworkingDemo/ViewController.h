@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)getBaiDuIndexPage:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *httpGetMethodTestButton;
 
 @end
 

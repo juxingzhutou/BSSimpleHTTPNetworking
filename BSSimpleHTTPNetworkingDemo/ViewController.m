@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BSHTTPAPI.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.httpGetMethodTestButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+    
+    NSString *buttonTitle = @"获取百度首页\nHTTP Get Method";
+    self.httpGetMethodTestButton.titleLabel.text = buttonTitle;
+    [self.httpGetMethodTestButton setTitle:buttonTitle forState:UIControlStateNormal];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)getBaiDuIndexPage:(id)sender {
+    BSOnHTTPRequestSuccess onSuccess = ^(id res) {
+        NSLog(@"Success:%@", [[NSString alloc] initWithData:res encoding:NSUTF8StringEncoding]);
+    };
+    
+    BSOnHTTPRequestFailure onFailure = ^(NSHTTPURLResponse *response, id responseObject, NSError *error) {
+        NSLog(@"Failure:%@", error);
+    };
+    
+    [[BSHTTPAPI sharedInstance] getBaiDuIndexPageOnSuccess:onSuccess onFailure:onFailure];
 }
 
 @end
