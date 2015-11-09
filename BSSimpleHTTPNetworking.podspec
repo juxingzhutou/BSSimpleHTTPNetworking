@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name     = 'BSSimpleHTTPNetworking'
   s.version  = '0.0.1'
   s.summary = 'An simple networking api based on AFNetworking'
-  s.license  = 'MIT'
+  s.license = { :type => 'MIT', :file => 'LICENCE' }
   s.homepage = 'https://github.com/juxingzhutou/BSSimpleHTTPNetworking'
   s.author = { 'juxingzhutou' => 'juxingzhutou@gmail.com' }
 
