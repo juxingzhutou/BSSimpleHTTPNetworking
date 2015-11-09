@@ -43,3 +43,7 @@ HTTP接口的包装见文件`BSHTTPAPI.h`和`BSHTTPAPI.m`，示例如下：
 3. Multipart HTTP Post请求
 
 Multipart请求的实现可以参考Demo中的又拍云上传接口的实现以及`BSNetworking`中的注释。
+
+##License
+
+MIT License
