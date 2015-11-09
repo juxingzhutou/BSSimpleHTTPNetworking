@@ -54,4 +54,12 @@
                                                   onFailure:onFailure];
 }
 
+- (void)getBaiDuIndexPageOnSuccess:(BSOnHTTPRequestSuccess)onSuccess
+                         onFailure:(BSOnHTTPRequestFailure)onFailure {
+    [[BSNetworking sharedInstance] httpGetWithAbsoluteURL:@"http://www.baidu.com"
+                                                   params:nil
+                                                onSuccess:onSuccess
+                                                onFailure:onFailure];
+}
+
 @end

@@ -22,4 +22,7 @@
                             onSuccess:(BSOnHTTPRequestSuccess)onSuccess
                             onFailure:(BSOnHTTPRequestFailure)onFailure;
 
+- (void)getBaiDuIndexPageOnSuccess:(BSOnHTTPRequestSuccess)onSuccess
+                         onFailure:(BSOnHTTPRequestFailure)onFailure;
+
 @end
