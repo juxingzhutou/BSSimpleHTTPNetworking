@@ -4,6 +4,24 @@
 
 这个库的目的就是用最简单直接的方式在AFNetworking上进行封装，以实现离散型的网络接口设计，提高网络请求相关代码的质量。
 
+##Get Started
+
+###直接引入
+
+将`BSSimpleHTTPNetworking`目录中的两个文件直接引入项目中，然后`#import "BSNetworking.h"`
+
+###通过Cocoapods
+
+在`Podfile`中插入
+
+```
+platform :ios, '7.0'
+
+pod "BSSimpleHTTPNetworking"
+```
+
+##使用
+
 HTTP接口的包装见文件`BSHTTPAPI.h`和`BSHTTPAPI.m`，示例如下：
 
 ```
