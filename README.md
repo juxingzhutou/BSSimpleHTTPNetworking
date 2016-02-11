@@ -10,7 +10,7 @@
 
 将`BSSimpleHTTPNetworking`目录中的两个文件直接引入项目中，然后`#import "BSNetworking.h"`
 
-###通过Cocoapods
+###通过CocoaPods
 
 在`Podfile`中插入
 
